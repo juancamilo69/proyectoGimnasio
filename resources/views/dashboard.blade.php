@@ -10,6 +10,15 @@
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
                     {{ __("You're logged in!") }}
+
+                    <h4>Home Page</h4>
+                    <p>Este contenido es público</p>
+                    @role('administrador')
+                    <p>Solo lo va a ver el rol administrador</p>
+                    @endrole
+                    @role('cliente')
+                    <p>Solo lo va a ver el rol cliente</p>
+                    @endrole
                 </div>
             </div>
         </div>
