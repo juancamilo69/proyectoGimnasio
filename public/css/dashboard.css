@@ -6,6 +6,45 @@
     letter-spacing: 3px;
 }
 
+.contenedor-titulos-cards {
+    margin-top: 50px;
+}
+
+.contenedor-titulos-cards h3 {
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+.contenedor-titulos-cards h1 {
+    font-weight: bold;
+    font-size: 50px;
+    margin-left: 50px;
+}
+
 .card {
-    text-align: center;
+    text-align: left;
+}
+
+.card h5 {
+    font-size: 20px;
+
+    font-weight: bold;
+}
+
+.card h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.card p {
+    margin-bottom: 10px;
+}
+
+.card .btns {
+    width: 100%;
+    color: #f1f1f1;
+    background-color: #252525;
+    padding: 10px;
+    border-radius: 5px;
 }
