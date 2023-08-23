@@ -1,6 +1,6 @@
 <!-- Custom Css -->
 <link rel="stylesheet" href="{{ asset('css/dashboard.css') }}">
-
+<link rel="stylesheet" href="{{ asset('css/general.css') }}">
 <!-- Defautl Css -->
 @extends('default')
 
@@ -16,36 +16,58 @@
     </x-slot>
 
     <!-- Hero Section -->
-    <div class="conatiner-fluid">
+    <div class="conatiner-fluid" style="position: relative;">
         <img src="{{ asset('images/banner/banner1.jpg') }}" alt="">
     </div>
+    
+    <!-- Membresias -->
+    <div class="contenedor-body-box">
+       <div class="membresias-card max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <section class="contenedor-titulos-cards container">
+            <h3>Nuestros</h3>
+            <h1>Planes</h1>
+            </section>
 
-    <section class="contenedor-titulos-cards container">
-    <h3>Nuestros</h3>
-    <h1>Planes</h1>
-    </section>
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 text-gray-900">
-                <div class="row row-cols-1 row-cols-md-3 g-4">
-
-                
-  <!-- CARD MEMBRESÍAS -->
-  @foreach ($membresiasData as $membresiasDatas)
-  <div class="col">
-    <div class="card h-100">
-      <div class="card-body">
-        <h5 class="card-title">{{$membresiasDatas->NOMBREMEMBRESIA}}</h5>
-        <h2>{{$membresiasDatas->PRECIO}}</h2>
-        <p class="card-text">{{$membresiasDatas->DESCRIPCION}}</p>
-        <button type="button" class="btns">Dark</button>
-      </div>
-    </div>
-  </div>
-  @endforeach
+    <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
+        <div class="p-6 text-gray-900">
+            <div class="row row-cols-1 row-cols-md-3 g-4">            
+                <!-- CARD MEMBRESÍAS -->
+                @foreach ($membresiasData as $membresiasDatas)
+                <div class="col">
+                    <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">{{$membresiasDatas->NOMBREMEMBRESIA}}</h5>
+                        <h2>{{$membresiasDatas->PRECIO}}</h2>
+                        <p class="card-text">{{$membresiasDatas->DESCRIPCION}}</p>
+                        <button type="button" class="btns">Adquirir</button>
+                    </div>
+                    </div>
+                </div>
+                @endforeach
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- Enunciado el imperio de la disciplina -->
+    <section class="section-imperio">
+        <div class="contenido-imperio container">
+            <div class="row">
+                <div class="col-numero col-12 col-sm-12 col-md-12 col-lg-3">
+                    <h2>01</h2>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-9">
+                <h3>El imperio de la <span>disciplina</span></h3>
+                <p>¡Bienvenidos al sitio web de Reich Gym!
+                    En Reich Gym, nuestra misión es ayudarte a alcanzar tus metas de acondicionamiento 
+                    físico y salud. Nuestro equipo de entrenadores altamente capacitados está comprometido
+                    para brindarte la mejor experiencia posible y así puedas alcanzar tus objetivos de forma 
+                    segura y eficiente.</p>
+                </div>
+                <!-- <div class="col col-lg-3">
+                    <img src="{{ asset('images/recursos-pagina/personas-ejercicio.svg') }}" alt="Ejercicio gym" class="img-imperio img-responsive">
+                </div> -->
+            </div>
+        </div>
+    </section>
 </x-app-layout>

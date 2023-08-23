@@ -7,23 +7,25 @@
 }
 
 .contenedor-titulos-cards {
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 .contenedor-titulos-cards h3 {
     font-weight: bold;
     font-size: 20px;
-    margin-left: 50px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .contenedor-titulos-cards h1 {
     font-weight: bold;
     font-size: 50px;
-    margin-left: 50px;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .card {
     text-align: left;
+    font-family: 'Roboto', sans-serif;
 }
 
 .card h5 {
@@ -47,4 +49,51 @@
     background-color: #252525;
     padding: 10px;
     border-radius: 5px;
+}
+
+.membresias-card {
+    margin-bottom: 80px;
+}
+
+/* .section-imperio */
+
+.section-imperio {
+    background-color: #E3E3E3;
+    height: 717px;
+}
+
+.contenido-imperio {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+
+.col-numero {
+    display: flex;
+    align-items: center;
+}
+
+.contenido-imperio h2 {
+    font-size: 40px;
+    color: #727A69;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contenido-imperio h3 {
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+.contenido-imperio p {
+    font-size: 16px;
+    line-height: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contenido-imperio span {
+    color: #727A69;
 }
