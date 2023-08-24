@@ -1,3 +1,39 @@
+.mouse {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%) rotate(270deg);
+    width: 40px;
+    height: 24px;
+    cursor: pointer;
+    border: 2px solid #fff;
+    border-radius: 20px;
+  }
+  
+  .scroll {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    margin-top: -4px;
+    width: 16px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: #fff;
+    animation: scroll 1.5s infinite;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(10px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
 .texto-bienvenido {
     margin-top: 80px;
     text-align: center;
@@ -59,7 +95,7 @@
 
 .section-imperio {
     background-color: #E3E3E3;
-    height: 717px;
+    height: 300px;
 }
 
 .contenido-imperio {
@@ -72,6 +108,7 @@
 .col-numero {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .contenido-imperio h2 {
@@ -96,4 +133,118 @@
 
 .contenido-imperio span {
     color: #727A69;
+}
+
+/* .section-imperio 2 */
+
+.section-imperio2 {
+    background-color: #727A69;
+    height: 300px;
+}
+
+.contenido-imperio2 {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+
+.col-numero2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido-imperio2 h2 {
+    font-size: 40px;
+    color: #E3E3E3;
+    text-align: right;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contenido-imperio2 h3 {
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+.contenido-imperio2 p {
+    font-size: 16px;
+    line-height: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contenido-imperio2 span {
+    color: #E3E3E3;
+}
+
+/* Section Ubicaciones */
+
+.section-ubicaciones {
+    margin-top: 80px;
+}
+
+.section-ubicaciones .titulo-ubicaciones {
+        font-weight: bold;
+        font-size: 40px;
+        margin-bottom: 30px;
+        font-family: 'Montserrat', sans-serif;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1024px) {
+    .section-imperio {
+        height: 400px;
+    }
+
+    .section-imperio2 {
+        height: 400px;
+    }
+
+    .col-numero {
+        display: none;
+    }
+
+    .col-numero2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /* .contenido-imperio2 p {
+       text-align: justify;
+    } */
+}
+
+@media screen and (max-width: 500px) {
+    .contenido-imperio h3 {
+        font-size: 35px;
+
+    }
+
+    .contenido-imperio2 h3 {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .section-imperio {
+        height: 500px;
+    }
+
+    .section-imperio2 {
+        height: 500px;
+    }
+
+    .contenido-imperio h3 {
+        font-size: 25px;
+
+    }
+
+    .contenido-imperio2 h3 {
+        font-size: 25px;
+    }
 }

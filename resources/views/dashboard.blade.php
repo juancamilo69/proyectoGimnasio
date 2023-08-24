@@ -1,6 +1,7 @@
 <!-- Custom Css -->
 <link rel="stylesheet" href="{{ asset('css/dashboard.css') }}">
 <link rel="stylesheet" href="{{ asset('css/general.css') }}">
+<link rel="stylesheet" href="{{ asset('css/sedes.css') }}">
 <!-- Defautl Css -->
 @extends('default')
 
@@ -18,6 +19,9 @@
     <!-- Hero Section -->
     <div class="conatiner-fluid" style="position: relative;">
         <img src="{{ asset('images/banner/banner1.jpg') }}" alt="">
+        <div class="mouse">
+            <div class="scroll"></div>
+          </div>
     </div>
     
     <!-- Membresias -->
@@ -69,5 +73,70 @@
                 </div> -->
             </div>
         </div>
+    </section>
+
+    <!-- Enunciado 2 -->
+    <section class="section-imperio2">
+        <div class="contenido-imperio2 container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-9">
+                <h3>El imperio de la <span>disciplina</span></h3>
+                <p>¡Bienvenidos al sitio web de Reich Gym!
+                    En Reich Gym, nuestra misión es ayudarte a alcanzar tus metas de acondicionamiento 
+                    físico y salud. Nuestro equipo de entrenadores altamente capacitados está comprometido
+                    para brindarte la mejor experiencia posible y así puedas alcanzar tus objetivos de forma 
+                    segura y eficiente.</p>
+                </div>
+                <div class="col-numero2 col-12 col-sm-12 col-md-12 col-lg-3">
+                    <h2>02</h2>
+                </div>
+                <!-- <div class="col col-lg-3">
+                    <img src="{{ asset('images/recursos-pagina/personas-ejercicio.svg') }}" alt="Ejercicio gym" class="img-imperio img-responsive">
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Ubicaciones -->
+    <section class="section-ubicaciones container">
+        <h2 class="titulo-ubicaciones">Ubicaciones:</h2>
+        <div class="lista-ciudades">
+            <form action="#">
+                    <label for="lang">Ciudad: </label>
+                    <select name="Ciudades" id="lang">
+                        <option value="Tunja">Tunja</option>
+                        <option value="Barbosa">Barbosa</option>
+                    </select>
+                </form>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a short card.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+  </div>
+</div>
     </section>
 </x-app-layout>
